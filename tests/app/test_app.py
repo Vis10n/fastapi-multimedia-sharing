@@ -11,4 +11,4 @@ def test_hello_world_status_code():
 
 def test_hello_world_response():
     response = client.get("/hello-world")
-    assert response.json() == {"message": "Hello World"}
+    assert response.json() == {"message": "Hello World!"}
