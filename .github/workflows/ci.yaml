@@ -1,4 +1,4 @@
-name: Run Tests (Pytest with uv)
+name: Run unit tests
 
 on:
   pull_request:
@@ -31,4 +31,4 @@ jobs:
         run: uv sync
 
       - name: Run tests
-        run: uv run pytest
+        run: uv run bash -c "PYTHONPATH=. pytest"
